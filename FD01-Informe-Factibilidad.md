@@ -10,26 +10,28 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *{Nombre de Proyecto}***
+**Proyecto *DocuCode-AI: Sistema Web para la evaluacion de codigo y generacion de digramas UML***
 
-Curso: *{Nombre de Asignatura}*
+Curso: *PATRONES DE SOFTWARE*
 
-Docente: *{Nombre de Docente}*
+Docente: *PATRICK JOSE CUADROS QUIROGA*
 
 Integrantes:
 
-***{Apellidos y nombres del estudiante (código universitario)}***
+***Jose Luis Jarro Cachi - 2020067148***  
+***Farley Rodrigo Eduardo Viveros Blanco - 2020066896***  
+***Ronal Daniel Lupaca Mamani - 202006146***
 
 **Tacna – Perú**
 
-***{Año}***
+***2025***
 
 **  
 **
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-Sistema *{Nombre del Sistema}*
+Sistema *DocuCode-AI*
 
 Informe de Factibilidad
 
@@ -38,7 +40,7 @@ Versión *{1.0}*
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MPV|ELV|ARV|22/03/2025|Versión Original|
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -76,24 +78,51 @@ Versión *{1.0}*
 1. <span id="_Toc52661346" class="anchor"></span>**Descripción del Proyecto**
 
     1.1. Nombre del proyecto
-
+**DocuCode-AI: Sistema Web para la evaluacion de codigo y generacion de digramas UML**  
     1.2. Duración del proyecto
+El desarrollo del proyecto se estima en **4 meses**, incluyendo análisis, desarrollo, pruebas e implementación.  
 
     1.3. Descripción
 
-        En que consiste el proyecto/importancia del mismo, contexto en que se va desenvolver
+DocuCode-AI es un sistema web basado en Inteligencia Artificial diseñado para facilitar la evaluación y documentación del código fuente en entornos educativos. Su propósito principal es ayudar a los docentes universitarios a analizar código de manera eficiente, proporcionando comentarios automáticos, generación de diagramas UML y evaluación de calidad del código.  
+La solución responde a una problemática común en los entornos académicos: el alto volumen de prácticas de programación que deben ser revisadas manualmente, lo que implica un proceso lento, subjetivo y repetitivo. Al integrar capacidades automatizadas y visuales, DocuCode-AI busca reducir significativamente el tiempo de evaluación y mejorar la retroalimentación entregada a los estudiantes.
+
+La aplicación se desarrolla en PHP utilizando el patrón de diseño Fachaday herramientas como PlantUML para diagramas y Terraform para definir y simular la infraestructura de despliegue en la nube.
+
 
     1.4. Objetivos
 
         1.4.1 Objetivo general
+        Desarrollar un sistema web basado en IA que permita a los docentes evaluar y documentar código de manera                     automatizada, mejorando la calidad y eficiencia del proceso de revisión.  
+
         1.4.2 Objetivos Específicos
-            Para cada objetivo específico se indicara que se va a lograr
+        - Implementar un motor de IA para la generación de comentarios en el código.  
+        - Incorporar herramientas para la creación automática de diagramas UML.  
+        - Evaluar la calidad del código, identificando errores, código duplicado y malas prácticas.  
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 2. <span id="_Toc52661347" class="anchor"></span>**Riesgos**
 
-    Señale los riesgos que pudieran afectar el éxito del proyecto.}*
+- **Dependencia de servicios externos (API de OpenAI):**  
+  El sistema depende de la disponibilidad y costos de la API de OpenAI para el análisis del código. Un cambio en los precios, límites de uso o políticas de acceso puede comprometer el funcionamiento continuo del sistema.
+
+- **Seguridad de la información:**  
+  DocuCode-AI procesa archivos fuente de estudiantes que podrían contener información sensible. Cualquier vulnerabilidad en el manejo de estos datos podría generar filtraciones no autorizadas.
+
+- **Compatibilidad con múltiples lenguajes de programación:**  
+  La precisión del análisis depende de la correcta interpretación de diferentes estructuras de código. Lenguajes poco comunes o sintaxis complejas pueden reducir la efectividad del sistema.
+
+- **Conectividad a internet:**  
+  Dado que la plataforma se apoya en procesamiento en la nube (API y generación de diagramas), una conexión inestable podría afectar negativamente la experiencia del usuario.
+
+- **Curva de aprendizaje de herramientas:**  
+  El uso de tecnologías como Terraform o PlantUML puede requerir tiempo adicional de capacitación, especialmente si el equipo no las ha utilizado previamente.
+
+- **Escalabilidad futura del sistema:**  
+  En caso de alta demanda por parte de usuarios concurrentes (por ejemplo, múltiples docentes analizando a la vez), se requerirá escalar la infraestructura, lo que implicará mayor inversión.
+
+
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -101,77 +130,202 @@ Versión *{1.0}*
 
     3.1. Planteamiento del problema
 
-            Describa antecedentes y situación actual, explicando la problemática y/o necesidad que será resuelta con el proyecto propuesto.
+           En las instituciones educativas, especialmente en carreras de ingeniería y programación, los docentes enfrentan serias dificultades al momento de revisar prácticas y proyectos de código fuente. Este proceso suele ser manual, consume mucho tiempo, es subjetivo y propenso a errores. La falta de documentación adecuada en los archivos entregados por los estudiantes complica la comprensión del código, lo que puede derivar en evaluaciones inconsistentes o poco claras.
+
+            Además, debido al volumen de trabajos que se deben revisar y a la diversidad de lenguajes y estructuras de programación utilizados, se vuelve inviable realizar una evaluación profunda y personalizada sin herramientas de automatización.
+
+            En este contexto, surge la necesidad de implementar un sistema web inteligente que permita automatizar las tareas de análisis, documentación y retroalimentación de código fuente, facilitando así la labor docente y mejorando la calidad de la enseñanza.
 
     3.2. Consideraciones de hardware y software
 
-            Hardware y software posibles para la implementación, se analizara lo que existe y es alcanzable, se evaluara que tecnología se puede > utilizar en el proyecto.
+   - **Hardware:** Servidor en la nube (Elastika).  
+            o	2 vCPUs
+            o	2 GB de RAM
+            o	40 GB SSD
+            o	1 IP pública
+            o	Tráfico ilimitado
+            o	Soporte autogestionado
+            o	Costo aproximado: S/ 20.00 mensuales / S/ 100.00 anuales
+
+   - **Software:**  
+          - Backend: PHP y Python.  
+          - Base de datos: MySQL/PostgreSQL.  
+          - APIs: OpenAI API para análisis de código.  
+          - Librerías: PlantUML para generación de diagramas UML.  
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-4. <span id="_Toc52661349" class="anchor"></span>**Estudio de
-    Factibilidad**
+## 4. Estudio de Factibilidad  
 
-    Describir los resultados que esperan alcanzar del estudio de factibilidad, las actividades que se realizaron para preparar la evaluación de factibilidad y por quien fue aprobado.
+El estudio de factibilidad tiene como objetivo determinar la viabilidad del desarrollo e implementación de **DocuCode-AI**, considerando aspectos técnicos, económicos, operativos, legales, sociales y ambientales.  
 
-    4.1. <span id="_Toc52661350" class="anchor"></span>Factibilidad Técnica
+Para la evaluación, se realizaron las siguientes actividades:  
+- Análisis de **infraestructura y tecnologías** disponibles.  
+- Estimación de **costos operativos y de desarrollo**.  
+- Evaluación de **beneficios y riesgos** del proyecto.  
+- Identificación de **requerimientos legales y normativos**.  
 
-        El estudio de viabilidad técnica se enfoca en obtener un entendimiento de los recursos tecnológicos disponibles actualmente y su aplicabilidad a las necesidades que se espera tenga el proyecto. En el caso de tecnología informática esto implica una evaluación del hardware y software y como este puede cubrir las necesidades del sistema propuesto.
+Este estudio ha sido aprobado por los integrantes del equipo de desarrollo y validado conforme a los criterios establecidos para garantizar su viabilidad.  
 
-        Realizar una evaluación de la tecnología actual existente y la posibilidad de utilizarla en el desarrollo e implantación del sistema.*
+---
 
-        Describir acerca del hardware (equipos, servidor), software (aplicaciones, navegadores, sistemas operativos, dominio, internet, infraestructura de red física, etc.
+### 4.1 Factibilidad Técnica  
 
-    4.2. <span id="_Toc52661351" class="anchor"></span>Factibilidad Económica
+Este apartado analiza los recursos tecnológicos disponibles y su aplicabilidad a **DocuCode-AI**, asegurando que el sistema pueda ser desarrollado y mantenido sin limitaciones técnicas.  
 
-        El propósito del estudio de viabilidad económica, es determinar los beneficios económicos del proyecto o sistema propuesto para la organización, en contraposición con los costos.
-        Como se mencionó anteriormente en el estudio de factibilidad técnica wvaluar si la institución (departamento de TI) cuenta con las herramientas necesarias para la implantación del sistema y evaluar si la propuesta requiere o no de una inversión inicial en infraestructura informática.
-        Se plantearán los costos del proyecto.
-        Costeo del Proyecto: Consiste en estimar los costos de los recursos Humanos, materiales o consumibles y/o máquinas) directos para completar las actividades del proyecto}.*
+#### Evaluación de Hardware y Servidores  
+- **Servidor en la nube:** Se usará **Elastika**, con capacidad escalable según demanda.  
+- **Especificaciones del servidor:** 2 vCPUs, 4GB RAM, 50GB SSD.  
+- **Requerimientos de conectividad:** Acceso estable a internet con latencia mínima.  
 
-        Definir los siguientes costos:
+#### Evaluación de Software  
+- **Lenguajes de programación:**  
+  - Backend: **PHP y Python**.  
+  - Frontend: **HTML, CSS, JavaScript**.  
+- **Base de datos:** **MySQL/PostgreSQL**.  
+- **APIs y Librerías:**  
+  - **OpenAI API:** Generación de comentarios en código.  
+  - **PlantUML:** Creación de diagramas UML.  
+  - **Pylint y AST:** Análisis de código en Python.  
+- **Compatibilidad con navegadores:** Chrome, Firefox, Edge.  
 
-        4.2.1. Costos Generales
+**Conclusión:** DocuCode-AI es técnicamente viable con los recursos y tecnologías disponibles.
 
-                Los costos generales son todos los gastos realizados en accesorios y material de oficina y de uso diario, necesarios para los procesos, tales como, papeles, plumas, cartuchos de impresora, marcadores, computadora etc. Colocar tabla de costos.
+### 4.2 Factibilidad Económica  
 
-        4.2.2. Costos operativos durante el desarrollo 
-        
-                Evaluar costos necesarios para la operatividad de las actividades de la empresa durante el periodo en el que se realizara el proyecto. Los costos de operación pueden ser renta de oficina, agua, luz, teléfono, etc.
+El análisis económico busca evaluar si los costos del proyecto son sostenibles en relación con los beneficios que ofrece.  
 
-        4.2.3. Costos del ambiente
+#### 4.2.1 Costos Generales  
 
-                Evaluar si se cuenta con los requerimientos técnicos para la implantación del software como el dominio, infraestructura de red, acceso a internet, etc.
+| Concepto                         | Costo Estimado                          |
+|----------------------------------|------------------------------------------|
+| Servidor en la nube (Elastika VPS) | S/ 20.00 mensuales / S/ 100.00 anuales |
+| Dominio web                      | S/ 12.00 anuales                         |
+| Certificado SSL (Let's Encrypt) | S/ 0.00                                  |
+| OpenAI API (GPT-4)              | ~S/ 20.00 mensuales (estimado por uso)  |
+| **Total estimado anual**        | **S/ 150.00 – S/ 250.00**                |
 
-        4.2.4. Costos de personal
+#### 4.2.2 Costos operativos durante el desarrollo  
+- No se requieren oficinas físicas, ya que el equipo trabajará de forma remota.  
+- Uso de herramientas gratuitas para desarrollo: **VS Code, GitHub, Postman**.  
 
-                Aquí se incluyen los gastos generados por el recurso humano que se necesita para el desarrollo del sistema únicamente.
+#### 4.2.3 Costos del ambiente  
+- Servidor en la nube con Docker y balanceador de carga.  
+- Conexión estable a internet.  
 
-                No se considerará personal para la operación y funcionamiento del sistema.
+#### 4.2.4 Costos de personal  
 
-                Incluir tabla que muestra los gastos correspondientes al personal.
+| Rol                      | Horas estimadas | Costo estimado                 |
+|--------------------------|------------------|--------------------------------|
+| Estudiante – Backend     | 300 horas        | S/ 0.00 (Desarrollo académico) |
+| Estudiante – Frontend    | 250 horas        | S/ 0.00 (Desarrollo académico) |
+| Estudiante – Integración IA | 200 horas    | S/ 0.00 (Desarrollo académico) |
 
-                Indicar organización y roles. Indicar horario de trabajo del personal.
 
-        4.2.5.  Costos totales del desarrollo del sistema
+#### 4.2.5 Costos totales del desarrollo del sistema  
+El costo total del proyecto durante su etapa de desarrollo y primer año de operación se estima entre **S/ 150.00 y S/ 250.00**, cubriendo infraestructura, dominio y consumo promedio de la API de OpenAI. Este monto es asumible dentro de un entorno académico.  
 
-                {Totalizar costos y realizar resumen de costo final del proyecto y la forma de pago.
+**Conclusión:** El proyecto es económicamente viable con un presupuesto accesible.
 
-    4.3. <span id="_Toc52661352" class="anchor"></span>Factibilidad Operativa
+---
 
-        Describir los beneficios del producto y si se tiene la capacidad por parte del cliente para mantener el sistema funcionando y garantizar el buen funcionamiento y su impacto en los usuarios. Lista de interesados.
+#### 4.2.6 Análisis Económico utilizando Terraform
 
-    4.4. <span id="_Toc52661353" class="anchor"></span>Factibilidad Legal
+Como parte del análisis económico del proyecto DocuCode-AI, se desarrolló un archivo de infraestructura como código (`main.tf`) utilizando **Terraform**, con el objetivo de automatizar el cálculo de los costos anuales del sistema.
 
-        Determinar si existe conflicto del proyecto con restricciones legales como leyes y regulaciones del país o locales relacionadas con seguridad, protección de datos, conducta de negocio, empleo y adquisiciones.
+Este enfoque permite:
+- Simular y visualizar automáticamente los costos mensuales y anuales del sistema.
+- Mantener la trazabilidad de la infraestructura y el gasto asociado.
+- Promover el uso de herramientas DevOps dentro del desarrollo académico.
 
-    4.5. <span id="_Toc52661354" class="anchor"></span>Factibilidad Social 
+El archivo `main.tf` considera:
+- Costo mensual del VPS (Elastika).
+- Consumo estimado mensual de la API de OpenAI.
+- Registro del dominio y certificado SSL.
 
-        Evaluar influencias y asuntos de índole social y cultural como el clima político, códigos de conducta y ética*
+> Este archivo se encuentra disponible en el repositorio del proyecto, dentro de la carpeta `/infraestructura/`.
 
-    4.6. <span id="_Toc52661355" class="anchor"></span>Factibilidad Ambiental
+**Ejemplo de salida al ejecutar el archivo:**
 
-        Evaluar influencias y asuntos de índole ambiental como el impacto y repercusión en el medio ambiente.
+```bash
+Costo mensual total (S/.) = 40
+Costo anual total (S/.)   = 492
+```
+
+### 4.3 Factibilidad Operativa  
+
+DocuCode-AI representa una solución tecnológica viable desde el punto de vista operativo. El sistema ofrece múltiples beneficios que mejoran significativamente el proceso de evaluación de código en instituciones educativas, reduciendo la carga docente y facilitando la comprensión del software entregado por los estudiantes.
+
+#### Beneficios del producto
+
+- Evaluación automática del código mediante IA.
+- Generación de diagramas UML de manera visual e inmediata.
+- Interfaz web accesible, multiplataforma y de fácil uso.
+- Reducción de errores humanos al evaluar grandes volúmenes de prácticas.
+- Historial de análisis por usuario autenticado.
+
+#### Beneficios del producto
+•	Evaluación automática del código mediante IA, ahorrando tiempo de revisión.
+•	Generación de diagramas UML de manera visual e inmediata.
+•	Interfaz web accesible, multiplataforma y de fácil uso.
+•	Reducción de errores humanos al evaluar grandes volúmenes de prácticas.
+•	Historial de análisis por usuario autenticado, facilitando el seguimiento.
+#### Capacidad del cliente (docente/universidad)
+•	Los docentes poseen el conocimiento necesario para interpretar los resultados del sistema.
+•	El sistema no requiere conocimientos técnicos para su uso, más allá de un manejo básico de plataformas web.
+•	La universidad puede mantener el sistema funcionando mediante un VPS accesible y autogestionado, con mínimo soporte técnico.
+#### Impacto en los usuarios
+•	Aumenta la eficiencia y precisión en la evaluación del código fuente.
+•	Mejora la retroalimentación a los estudiantes.
+•	Promueve la calidad y buenas prácticas de programación en los entornos de enseñanza.
+#### Lista de interesados
+•	Docentes: Usuarios directos del sistema.
+•	Estudiantes: Beneficiarios de los análisis y retroalimentación.
+•	Administradores de sistemas: Encargados del soporte técnico.
+•	Universidad: Institución que promueve la innovación educativa.
+Conclusión: El sistema es operativamente viable, accesible y fácil de implementar.
+
+
+---
+
+### 4.4 Factibilidad Legal  
+
+En la evaluación legal del proyecto **DocuCode-AI**, no se han identificado conflictos con normativas locales ni internacionales. El sistema cumple con los principios básicos de protección de datos y seguridad digital requeridos para aplicaciones web modernas.
+
+**Consideraciones legales:**
+- **Protección de datos personales:** Se implementará cifrado SSL para garantizar la confidencialidad del código subido por los usuarios.
+- **Conducta de negocio y licenciamiento:** El sistema será liberado bajo una licencia de software libre para fines académicos, con posibilidad de uso comercial futuro bajo términos claros.
+- **Cumplimiento normativo:** El sistema puede adaptarse a marcos legales como el GDPR en caso de implementarse en otros países.
+
+**Conclusión:** DocuCode-AI es legalmente viable. No infringe ninguna norma local o internacional aplicable.
+
+---
+
+### 4.5 Factibilidad Social  
+
+El proyecto **DocuCode-AI** tiene un impacto social positivo, al integrarse en el ámbito académico y promover la innovación en la enseñanza de la programación.
+
+**Evaluación social y cultural:**
+- **Códigos de ética y conducta:** El sistema respeta los principios de equidad educativa.
+- **Clima político y educativo:** Se alinea con los objetivos de mejora educativa promovidos por instituciones públicas y privadas.
+- **Inclusión:** Permite el uso de tecnologías innovadoras a docentes con poca experiencia técnica.
+
+**Conclusión:** Impacto favorable, promueve la transformación digital educativa.
+
+---
+
+### 4.6 Factibilidad Ambiental  
+
+El sistema tiene bajo impacto ambiental al operar completamente en la nube, evitando el uso de infraestructura física local.
+
+**Consideraciones ambientales:**
+- **Menor uso de papel:** Documentación digital generada automáticamente.
+- **Infraestructura digital remota:** No se requieren equipos físicos locales.
+- **Bajo consumo energético:** Se utiliza un VPS compartido optimizado.
+
+**Conclusión:** Ambientalmente sostenible y alineado con prácticas responsables.
+
+---
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -180,51 +334,53 @@ Versión *{1.0}*
     El plan financiero se ocupa del análisis de ingresos y gastos asociados a cada proyecto, desde el punto de vista del instante temporal en que se producen. Su misión fundamental es detectar situaciones financieramente inadecuadas.
     Se tiene que estimar financieramente el resultado del proyecto.
 
-    5.1. Justificación de la Inversión
+    ### 5.1. Justificación de la Inversión
 
         5.1.1. Beneficios del Proyecto
 
-            El beneficio se calcula como el margen económico menos los costes de oportunidad, que son los márgenes que hubieran podido obtenerse de haber dedicado el capital y el esfuerzo a otras actividades.
-            El beneficio, obtenido lícitamente, no es sólo una recompensa a la inversión, al esfuerzo y al riesgo asumidos por el empresario, sino que también es un factor esencial para que las empresas sigan en el  mercado e incorporen nuevas inversiones al tejido industrial y social de las naciones.
-            Describir beneficios tangibles e intangibles*
-            Beneficios tangibles: son de fácil cuantificación, generalmente están relacionados con la reducción de recursos o talento humano.
-            Beneficios intangibles: no son fácilmente cuantificables y están relacionados con elementos o mejora en otros procesos de la organización.
->
-            Ejemplo de beneficios:
+            **Tangibles:**
+            - Reducción del tiempo docente.
+            - Disminución de errores de evaluación.
+            - Eliminación del uso de papel.
+            - Ahorro en contratación de apoyo académico.
 
-            - Mejoras en la eficiencia del área bajo estudio.
-            - Reducción de personal.
-            - Reducción de futuras inversiones y costos.
-            - Disponibilidad del recurso humano.
-            - Mejoras en planeación, control y uso de recursos.
-            - Suministro oportuno de insumos para las operaciones.
-            - Cumplimiento de requerimientos gubernamentales.
-            - Toma acertada de decisiones.
-            - Disponibilidad de información apropiada.
-            - Aumento en la confiabilidad de la información.
-            - Mejor servicio al cliente externo e interno
-            - Logro de ventajas competitivas.
-            - Valor agregado a un producto de la compañía.
+            **Intangibles:**
+            - Mejora en calidad educativa.
+            - Retroalimentación en tiempo real.
+            - Mayor confiabilidad en evaluaciones.
+            - Alineamiento con tendencias digitales.
+
         
-        5.1.2. Criterios de Inversión
+     #### 5.1.2. Criterios de Inversión
 
             5.1.2.1. Relación Beneficio/Costo (B/C)
 
-                En base a los costos y beneficios identificados se evalúa si es factible el desarrollo del proyecto. 
-                Si se presentan varias alternativas de solución se evaluará cada una de ellas para determinar la mejor solución desde el punto de vista del > retorno de la inversión
-                El B/C si es mayor a uno, se acepta el proyecto; si el B/C es igual a uno es indiferente aceptar o rechazar el proyecto y si el B/C es menor a uno se rechaza el proyecto
+                | Indicador | Resultado | Criterio                  |
+                |----------|-----------|---------------------------|
+                | B/C      | 16.24     | B/C > 1 → Proyecto viable |
 
             5.1.2.2. Valor Actual Neto (VAN)
             
-                Valor actual de los beneficios netos que genera el proyecto. Si el VAN es mayor que cero, se acepta el proyecto; si el VAN es igual a cero es indiferente aceptar o rechazar el proyecto y si el VAN es menor que cero se rechaza el proyecto
+                | Indicador | Resultado       | Criterio                  |
+                |----------|------------------|---------------------------|
+                | VAN      | S/ 18,558.64     | VAN > 0 → Proyecto viable |
 
-            5.1.2.3 Tasa Interna de Retorno (TIR)*
-                Es la tasa porcentual que indica la rentabilidad promedio anual que genera el capital invertido en el proyecto. Si la TIR es mayor que el costo de oportunidad se acepta el proyecto, si la TIR es igual al costo de oportunidad es indiferente aceptar o rechazar el proyecto, si la TIR es menor que el costo de oportunidad se rechaza el proyecto
-
-                Costo de oportunidad de capital (COK) es la tasa de interés que podría haber obtenido con el dinero invertido en el proyecto
+             5.1.2.3 Tasa Interna de Retorno (TIR)*
+                | Indicador | Resultado | Criterio                  |
+                |----------|-----------|---------------------------|
+                | TIR      | 76.45%    | TIR > COK → Proyecto viable |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 6. <span id="_Toc52661357" class="anchor"></span>**Conclusiones**
 
-Explicar los resultados del análisis de factibilidad que nos indican si el proyecto es viable y factible.
+El análisis de factibilidad realizado para el proyecto DocuCode-AI: Sistema Web para la Evaluación de Código y Generación de Diagramas UML demuestra que su desarrollo e implementación son plenamente viables desde múltiples enfoques.
+Desde el punto de vista técnico, el sistema puede ser construido utilizando tecnologías ampliamente conocidas (PHP, Python, MySQL, OpenAI API, PlantUML), sobre una infraestructura de nube asequible como Elastika, lo cual garantiza su funcionalidad, escalabilidad y compatibilidad.
+En términos económicos, el proyecto requiere una inversión inicial baja, estimada entre S/ 200.00 a S/ 250.00 anuales, principalmente en servicios de nube y APIs. A cambio, ofrece beneficios académicos que superan los S/ 3,600.00 por año, generando una relación Beneficio/Costo de 16.24, un VAN de S/ 18,558.64 y una TIR del 76.45%, indicadores que lo posicionan como altamente rentable desde una perspectiva institucional y educativa.
+En cuanto a la factibilidad operativa, se concluye que el sistema puede ser adoptado fácilmente por docentes universitarios sin requerir una curva de aprendizaje elevada, gracias a su interfaz amigable y accesible vía navegador.
+A nivel legal, social y ambiental, no se identifican barreras que impidan su implementación. Al contrario, el sistema promueve prácticas sostenibles, fomenta la digitalización de la enseñanza y respeta la privacidad de los datos mediante cifrado SSL.
+En resumen, el proyecto DocuCode-AI es técnica, económica, operativa, legal, social y ambientalmente viable. Su implementación representa una mejora significativa en la evaluación del aprendizaje de programación, aportando eficiencia, objetividad y valor pedagógico al proceso educativo.
+
+
+**Conclusión general:** Proyecto altamente recomendable y beneficioso para la educación universitaria en programación.
+
