@@ -36,9 +36,9 @@ Docente: *Patrick José Cuadros Quiroga*
 | FD02 - Informe de Visión de Producto | [📄 Descargar](./FD02-EPIS-Informe%20Vision.pdf) | [📄 Ver MD](./FD02-Informe-Vision.md) |
 | FD03 - Informe de Especificación de Requerimientos | [📄 Descargar](./FD03-EPIS-Informe%20Especificación%20Requerimientos.pdf) | [📄 Ver MD](./FD03-EPIS-Informe%20Especificación%20Requerimientos.md) |
 | FD04 - Informe de Arquitectura de Software | [📄 Descargar](./FD04-EPIS-Informe%20Arquitectura%20de%20Software.docx) | — |
-| FD05 - Informe de Proyecto | 🚧 Pendiente | 🚧 Pendiente |
-| Anexo - Diccionario de Datos | 🚧 Pendiente | 🚧 Pendiente |
-| Anexo - Estándar de Programación | 🚧 Pendiente | 🚧 Pendiente |
+| FD05 - Informe de Proyecto | 📄 Descargare | 📄 Descargar |
+| Anexo - Diccionario de Datos | 📄 Descargar | 📄 Descargar |
+| Anexo - Estándar de Programación | 📄 Descargar| 📄 Descargar |
 
 ---
 
