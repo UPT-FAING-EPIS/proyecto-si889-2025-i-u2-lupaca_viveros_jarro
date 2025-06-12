@@ -279,3 +279,98 @@ Instancias EC2 creadas en AWS us-east-1 (N. Virginia):
 Este proyecto es de uso académico, desarrollado en el marco del curso **Patrones de Software - EPIS UPT**.
 
 ---
+## 🖼️ Diagramas UML y Arquitectura del Sistema
+
+A continuación se presentan los diagramas UML y de arquitectura obtenidos mediante reverse engineering del código del sistema **DocuCode-AI**, tal como se solicita en la rúbrica FD04:
+
+### 📌 Diagrama de Casos de Uso
+
+![Casos de Uso](./imgdiagrama/image-20.png)
+
+---
+
+### 📌 Diagramas de Actividades (por Casos de Uso)
+
+- **CU01 - Subir archivo de código**  
+  ![CU01 - Actividad](./imgdiagrama/image-6.png)
+
+- **CU02 - Generar diagramas UML**  
+  ![CU02 - Actividad](./imgdiagrama/image-7.png)
+
+- **CU03 - Visualizar resultados**  
+  ![CU03 - Actividad](./imgdiagrama/image-8.png)
+
+- **CU04 - Evaluar calidad del código**  
+  ![CU04 - Actividad](./imgdiagrama/image-9.png)
+
+- **CU05 - Detectar código duplicado**  
+  ![CU05 - Actividad](./imgdiagrama/image-10.png)
+
+- **CU06 - Ver historial de análisis**  
+  ![CU06 - Actividad](./imgdiagrama/image-11.png)
+
+- **CU07 - Autenticarse con Google**  
+  ![CU07 - Actividad](./imgdiagrama/image-12.png)
+
+---
+
+### 📌 Diagramas de Secuencia
+
+- **CU01 - Subir archivo de código**  
+  ![CU01 - Secuencia](./imgdiagrama/image-13.png)
+
+- **CU02 - Generar diagramas UML**  
+  ![CU02 - Secuencia](./imgdiagrama/image-14.png)
+
+- **CU03 - Visualizar resultados**  
+  ![CU03 - Secuencia](./imgdiagrama/image-15.png)
+
+- **CU04 - Evaluar calidad del código**  
+  ![CU04 - Secuencia](./imgdiagrama/image-16.png)
+
+- **CU05 - Detectar código duplicado**  
+  ![CU05 - Secuencia](./imgdiagrama/image-17.png)
+
+- **CU06 - Ver historial de análisis**  
+  ![CU06 - Secuencia](./imgdiagrama/image-18.png)
+
+- **CU07 - Autenticarse con Google**  
+  ![CU07 - Secuencia](./imgdiagrama/image-19.png)
+
+---
+
+### 📌 Diagrama de Clases
+
+![Diagrama de Clases](./imgdiagrama/image-30.png)
+
+---
+
+### 📌 Diagrama de Objetos
+
+![Diagrama de Objetos](./imgdiagrama/image-29.png)
+
+---
+
+### 📌 Diagrama de Paquetes (Subsistemas)
+
+![Diagrama de Paquetes](./imgdiagrama/image-21.png)
+
+---
+
+### 📌 Diagrama de Componentes (Arquitectura del Sistema)
+
+![Diagrama de Componentes](./imgdiagrama/image-32.png)
+
+---
+
+### 📌 Diagrama de Base de Datos
+
+![Diagrama de Base de Datos](./imgdiagrama/base-datos.png)
+
+---
+
+### 📌 Diagrama de Despliegue
+
+![Diagrama de Despliegue](./imgdiagrama/image-34.png)
+
+---
