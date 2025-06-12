@@ -221,7 +221,32 @@ http://localhost/docucode-ai
 
 ## 🌍 Actions para despliegue de infraestructura
 
-- Workflow `terraform_deploy.yml` → despliegue de infraestructura en Elastika (simulado con Terraform).
+
+- Workflow [`terraform_deploy.yml`](./.github/workflows/terraform_deploy.yml) → despliegue real de infraestructura en AWS EC2 utilizando Terraform.
+
+### Resultado de ejecución:
+
+✅ Workflow ejecutado correctamente → instancia EC2 real creada.
+
+```
+Outputs:
+instance_public_ip = "3.95.193.156"
+```
+
+### Evidencia:
+
+Instancias EC2 creadas en AWS us-east-1 (N. Virginia):
+
+![Terraform Actions Success](https://github.com/UPT-FAING-EPIS/proyecto-si889-2025-i-u2-lupaca_viveros_jarro/assets/XXXXXXXXXX)
+
+*(Reemplaza XXXXX con el ID de la imagen de tu screenshot en GitHub si subes la imagen al repo, o pon la URL completa de la captura que ya tienes)*
+
+### Archivos utilizados:
+
+- [`terraform_deploy.yml`](./.github/workflows/terraform_deploy.yml)
+- [`main.tf`](./infra/terraform/main.tf)
+- [`variables.tf`](./infra/terraform/variables.tf)
+- [`outputs.tf`](./infra/terraform/outputs.tf)
 
 ---
 
