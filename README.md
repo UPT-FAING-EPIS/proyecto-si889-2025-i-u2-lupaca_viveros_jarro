@@ -58,7 +58,7 @@ Ver detalles completos en:
 
 ## 📌 Puntos del GitHub Wiki
 
-👉 [Acceder al Wiki del Proyecto](https://github.com/tu-usuario/docucode-ai/wiki)
+👉  [Acceder al Wiki del Proyecto](https://github.com/UPT-FAING-EPIS/proyecto-si889-2025-i-u2-lupaca_viveros_jarro/wiki)
 
 El Wiki incluye:
 
