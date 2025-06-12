@@ -1,7 +1,7 @@
 name: Terraform Deploy AWS EC2
 
 on:
-  workflow_dispatch: # Ejecutas manualmente desde Actions
+  workflow_dispatch:
 
 jobs:
   terraform:
