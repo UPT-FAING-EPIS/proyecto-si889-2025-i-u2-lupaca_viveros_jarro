@@ -1,12 +1,33 @@
-provider "aws" {
-  region = var.aws_region
-}
+name: Terraform Deploy AWS EC2
 
-resource "aws_instance" "docucodeai_server" {
-  ami           = "ami-08c40ec9ead489470" # Ubuntu 22.04 en us-east-1 (Ohio)
-  instance_type = "t2.micro" 
+on:
+  workflow_dispatch: # Ejecutas manualmente desde Actions
 
-  tags = {
-    Name = "DocuCodeAI-Server"
-  }
-}
+jobs:
+  terraform:
+    name: Terraform Apply
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.0
+
+      - name: Terraform Init
+        run: terraform -chdir=infra/terraform init
+
+      - name: Terraform Validate
+        run: terraform -chdir=infra/terraform validate
+
+      - name: Terraform Plan
+        run: terraform -chdir=infra/terraform plan
+
+      - name: Terraform Apply
+        run: terraform -chdir=infra/terraform apply -auto-approve
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
