@@ -193,7 +193,7 @@ http://localhost/docucode-ai
 
 ## 🛡️ GitHub Actions - Seguridad
 
-👉 [Acceder a GitHub Actions](https://github.com/tu-usuario/docucode-ai/actions)
+👉 [Acceder a GitHub Actions](https://github.com/UPT-FAING-EPIS/proyecto-si889-2025-i-u2-lupaca_viveros_jarro/actions)
 
 - SonarQube → análisis de bugs y vulnerabilidades → configurado.
 - Snyk o Semgrep → escaneo de dependencias → configurado.
@@ -202,7 +202,7 @@ http://localhost/docucode-ai
 
 ## 🏷️ GitHub - Releases y Packages
 
-👉 [Acceder a Releases](https://github.com/tu-usuario/docucode-ai/releases)
+👉 [Acceder a Releases](https://github.com/UPT-FAING-EPIS/proyecto-si889-2025-i-u2-lupaca_viveros_jarro/releases)
 
 - Release v1.0 publicado.
 - Package de distribución → publicado (opcional).
