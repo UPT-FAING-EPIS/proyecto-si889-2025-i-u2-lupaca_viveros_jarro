@@ -237,9 +237,12 @@ instance_public_ip = "3.95.193.156"
 
 Instancias EC2 creadas en AWS us-east-1 (N. Virginia):
 
-![Terraform Actions Success](https://github.com/UPT-FAING-EPIS/proyecto-si889-2025-i-u2-lupaca_viveros_jarro/assets/XXXXXXXXXX)
+![image](https://github.com/user-attachments/assets/e89796b6-9378-4f7b-bf1e-305d917df7b8)
 
-*(Reemplaza XXXXX con el ID de la imagen de tu screenshot en GitHub si subes la imagen al repo, o pon la URL completa de la captura que ya tienes)*
+![image](https://github.com/user-attachments/assets/b8b27d26-06e3-44b1-8f3e-6504286a5e0d)
+
+![image](https://github.com/user-attachments/assets/3c7359ab-0081-4918-ab79-f68f4342dbe4)
+
 
 ### Archivos utilizados:
 
