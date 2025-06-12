@@ -365,7 +365,7 @@ A continuación se presentan los diagramas UML y de arquitectura obtenidos media
 
 ### 📌 Diagrama de Base de Datos
 
-![Diagrama de Base de Datos](./imgdiagrama/base-datos.png)
+![image](https://github.com/user-attachments/assets/75209419-4fc5-4616-bd5a-597cf9828e6e)
 
 ---
 
