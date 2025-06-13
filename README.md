@@ -213,7 +213,6 @@ http://localhost/docucode-ai
 
 | Integrante | Commits | Pull Requests | Issues cerrados |
 |------------|---------|---------------|-----------------|
-| Jose Luis Jarro Cachi | X | Y | Z |
 | Farley Rodrigo Viveros Blanco | X | Y | Z |
 | Ronal Daniel Lupaca Mamani | X | Y | Z |
 
@@ -268,7 +267,6 @@ Instancias EC2 creadas en AWS us-east-1 (N. Virginia):
 
 ## 🧑‍💻 Autores
 
-- Jose Luis Jarro Cachi - 2020067148
 - Farley Rodrigo Eduardo Viveros Blanco - 2020066896
 - Ronal Daniel Lupaca Mamani - 202006146
 
